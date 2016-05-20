@@ -1,0 +1,99 @@
+
+/* MVT SEASONAL ON HOMEPAGE */
+.seasonal-widget>h2{
+  border: none;
+  font-size: 3.3rem;
+  line-height: 2.8rem;
+  margin: 10px 0 25px;
+  padding: 0;
+  color: #10a1cc;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 100;
+}
+.seasonal-tiles{
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+}
+
+.seasonal-tiles .seasonal-tiles-child{
+  display: inline-block;
+  margin:1% 0;
+  width: 49%;
+  position: relative;
+}
+@media only screen and (min-width: 580px){
+  .seasonal-widget>h2{
+    margin: 30px 0 45px;
+  }
+  .seasonal-tiles .seasonal-tiles-child {
+    width: 49%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .seasonal-tiles .seasonal-tiles-child {
+    width: 24%;
+  }
+}
+.seasonal-tiles .seasonal-tiles-child .seasonal-wrapper{
+  height: 100%;
+  top: 0;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  padding: 0px;
+  background: url("../images/shadow.png") repeat-x 0 bottom;
+  -webkit-transition: background 400ms ease-in;
+  -moz-transition: background 400ms ease-in;
+  -ms-transition: background 400ms ease-in;
+  -o-transition: background 400ms ease-in;
+  transition: background 400ms ease-in;
+  margin: 0;
+}
+.seasonal-tiles .seasonal-tiles-child .seasonal-wrapper:hover,
+.seasonal-tiles .seasonal-tiles-child .seasonal-wrapper:focus{
+  background-color: rgba(0,0,0,0.4);
+}
+.seasonal-tiles .seasonal-tiles-child h3{
+  height: 100%;
+  position: relative;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  align-items: flex-end;
+  width: 100%;
+}
+.seasonal-tiles .seasonal-tiles-child h3 a {
+  color: #FFFFFF;
+  font-size: 1.7rem;
+  text-align: center;
+  width: 100%;
+  padding: 20px 10px 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  transition: all 600ms ease-in-out;
+  height: 100%;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  align-items: flex-end;
+}
+.seasonal-tiles .seasonal-tiles-child .seasonal-wrapper:hover h3 a,
+.seasonal-tiles .seasonal-tiles-child .seasonal-wrapper:focus h3 a {
+  padding: 20px 10px 30px;
+}
+@media only screen and (min-width: 580px){
+  .seasonal-tiles .seasonal-tiles-child h3 a {
+    font-size: 2rem;
+  }
+}
