@@ -146,6 +146,11 @@
   display: block;
   text-transform: none;
   height:auto;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 .top-attractions-widget .seasonal-tiles .seasonal-tiles-child .seasonal-wrapper:hover h3 a,
 .top-attractions-widget .seasonal-tiles .seasonal-tiles-child .seasonal-wrapper:focus h3 a {
