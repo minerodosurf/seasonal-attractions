@@ -1,4 +1,3 @@
-
 /* MVT SEASONAL ON HOMEPAGE */
 .seasonal-widget>h2{
   border: none;
@@ -69,6 +68,9 @@
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -ms-grid-row-align: flex-end;
   align-items: flex-end;
   width: 100%;
 }
@@ -86,6 +88,9 @@
   display:-webkit-box;
   display:-ms-flexbox;
   display:flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -ms-grid-row-align: flex-end;
   align-items: flex-end;
 }
 .seasonal-tiles .seasonal-tiles-child .seasonal-wrapper:hover h3 a,
@@ -95,5 +100,84 @@
 @media only screen and (min-width: 580px){
   .seasonal-tiles .seasonal-tiles-child h3 a {
     font-size: 2rem;
+  }
+}
+
+/* TOP ATTRACTIONS */
+.top-attractions-widget .seasonal-tiles .seasonal-tiles-child{
+  border-radius: 50%;
+  overflow: hidden;
+  width: 130px;
+  height: 130px;
+  margin: 10px;
+}
+.top-attractions-widget .seasonal-tiles .seasonal-tiles-child .seasonal-wrapper{
+  background: transparent;
+}
+.top-attractions-widget .seasonal-tiles .seasonal-tiles-child h3{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+}
+.top-attractions-widget .seasonal-tiles .seasonal-tiles-child h3 a{
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.75);
+  font-size: 16px;
+  display: block;
+  text-transform: none;
+  height:auto;
+}
+.top-attractions-widget .seasonal-tiles .seasonal-tiles-child .seasonal-wrapper:hover h3 a,
+.top-attractions-widget .seasonal-tiles .seasonal-tiles-child .seasonal-wrapper:focus h3 a {
+
+}
+@media only screen and (min-width: 380px) {
+  .top-attractions-widget .seasonal-tiles .seasonal-tiles-child {
+    width: 160px;
+    height: 160px;
+    margin: 10px;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .top-attractions-widget .seasonal-tiles .seasonal-tiles-child {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media only screen and (min-width: 580px) {
+  .top-attractions-widget .seasonal-tiles .seasonal-tiles-child {
+    width: 155px;
+    height: 155px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .top-attractions-widget .seasonal-tiles .seasonal-tiles-child {
+    width: 110px;
+    height: 110px;
+    margin: 3px;
+  }
+}
+@media only screen and (min-width: 840px) {
+  .top-attractions-widget .seasonal-tiles .seasonal-tiles-child {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .top-attractions-widget .seasonal-tiles .seasonal-tiles-child {
+    width: 140px;
+    height: 140px;
   }
 }
