@@ -83,7 +83,11 @@
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
-  transition: all 600ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+  -moz-transition: all 400ms ease-in-out;
+  -ms-transition: all 400ms ease-in-out;
+  -o-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
   height: 100%;
   display:-webkit-box;
   display:-ms-flexbox;
@@ -99,10 +103,14 @@
 }
 @media only screen and (min-width: 580px){
   .seasonal-tiles .seasonal-tiles-child h3 a {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 768px){
+  .seasonal-tiles .seasonal-tiles-child h3 a {
     font-size: 2rem;
   }
 }
-
 /* TOP ATTRACTIONS */
 .top-attractions-widget .seasonal-tiles .seasonal-tiles-child{
   border-radius: 50%;
